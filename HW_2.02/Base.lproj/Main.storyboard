@@ -39,11 +39,20 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tdg-xr-SSW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                     </view>
+                    <connections>
+                        <outlet property="greenColorView" destination="ulf-l9-e74" id="ZLY-4Z-bk3"/>
+                        <outlet property="redColorView" destination="qE4-MX-1EF" id="XZ9-Bw-Daq"/>
+                        <outlet property="startButton" destination="m5N-bL-H5Z" id="Ei3-gd-5ZH"/>
+                        <outlet property="yellowColorView" destination="Vde-ec-m9q" id="eMX-aa-OfW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

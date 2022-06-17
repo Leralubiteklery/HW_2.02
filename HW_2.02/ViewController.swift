@@ -9,9 +9,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var redColorView: UIView!
+    @IBOutlet var yellowColorView: UIView!
+    @IBOutlet var greenColorView: UIView!
+    @IBOutlet var startButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        redColorView.layer.cornerRadius = 65
+        yellowColorView.layer.cornerRadius = 65
+        greenColorView.layer.cornerRadius = 65
+        
+        redColorView.layer.opacity = 0.3
+        yellowColorView.layer.opacity = 0.3
+        greenColorView.layer.opacity = 0.3
+        
+        startButton.layer.cornerRadius = 10
+    }
+    
+    
+    @IBAction func startButtonTapped() {
+        startButton.setTitle("NEXT", for: .normal)
     }
     
     
