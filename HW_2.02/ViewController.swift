@@ -27,14 +27,23 @@ class ViewController: UIViewController {
         
         startButton.layer.cornerRadius = 10
     }
-    
-    
+        
     @IBAction func startButtonTapped() {
         startButton.setTitle("NEXT", for: .normal)
-    }
-    
-    
-
-
+        if redColorView.layer.opacity == 0.3 && yellowColorView.layer.opacity == 0.3 && greenColorView.layer.opacity == 0.3 {
+            redColorView.layer.opacity = 1
+        } else if redColorView.layer.opacity == 1 {
+            yellowColorView.layer.opacity = 1
+            redColorView.layer.opacity = 0.3
+        } else if yellowColorView.layer.opacity == 1{
+            greenColorView.layer.opacity = 1
+            yellowColorView.layer.opacity = 0.3
+        } else if greenColorView.layer.opacity == 1 {
+            redColorView.layer.opacity = 1
+            greenColorView.layer.opacity = 0.3
+        }
+   }
 }
+    
+    
 
