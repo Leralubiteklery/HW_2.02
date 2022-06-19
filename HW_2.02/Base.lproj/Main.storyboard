@@ -16,25 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-MX-1EF">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-MX-1EF">
                                 <rect key="frame" x="142" y="120" width="130" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vde-ec-m9q">
-                                <rect key="frame" x="142" y="284" width="130" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vde-ec-m9q">
+                                <rect key="frame" x="142" y="285" width="130" height="130"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ulf-l9-e74">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ulf-l9-e74">
                                 <rect key="frame" x="142" y="450" width="130" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5N-bL-H5Z">
-                                <rect key="frame" x="142" y="756" width="130" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5N-bL-H5Z">
+                                <rect key="frame" x="142" y="737" width="130" height="44"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="BVq-Z6-FL9"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -46,6 +45,23 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="ulf-l9-e74" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="BNE-AM-zpP"/>
+                            <constraint firstItem="Vde-ec-m9q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="D3i-Qb-d8E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qE4-MX-1EF" secondAttribute="trailing" constant="142" id="DbA-qo-ENx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vde-ec-m9q" secondAttribute="trailing" constant="142" id="Eta-d0-Gex"/>
+                            <constraint firstItem="m5N-bL-H5Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="NVY-UM-0l0"/>
+                            <constraint firstItem="Vde-ec-m9q" firstAttribute="height" secondItem="ulf-l9-e74" secondAttribute="height" id="OUG-NT-s5C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ulf-l9-e74" secondAttribute="trailing" constant="142" id="PiB-Sy-mEO"/>
+                            <constraint firstItem="Vde-ec-m9q" firstAttribute="top" secondItem="qE4-MX-1EF" secondAttribute="bottom" constant="35" id="QQX-yF-uoJ"/>
+                            <constraint firstItem="qE4-MX-1EF" firstAttribute="height" secondItem="Vde-ec-m9q" secondAttribute="height" id="Twa-0a-ht2"/>
+                            <constraint firstItem="m5N-bL-H5Z" firstAttribute="top" secondItem="ulf-l9-e74" secondAttribute="bottom" constant="157" id="aGA-BY-cuy"/>
+                            <constraint firstItem="ulf-l9-e74" firstAttribute="top" secondItem="Vde-ec-m9q" secondAttribute="bottom" constant="35" id="alT-Cg-9L6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m5N-bL-H5Z" secondAttribute="bottom" constant="81" id="dMW-am-b9e"/>
+                            <constraint firstItem="qE4-MX-1EF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="idN-Uj-OQr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m5N-bL-H5Z" secondAttribute="trailing" constant="142" id="jWN-AA-r6X"/>
+                            <constraint firstItem="qE4-MX-1EF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="76" id="mwz-qz-RTV"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenColorView" destination="ulf-l9-e74" id="ZLY-4Z-bk3"/>
